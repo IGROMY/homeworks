@@ -1,0 +1,146 @@
+:root{
+    --aside-color: #7AA899;
+    --aside_button-color: #6e6c78;
+    --body-color: #3b3a3d;
+    --main_list-color: #6e6c78;
+    --text-color: #ffffff;
+    --weight-img: 12em;
+    --height-img: 19em;
+    --default-padding: 1em;
+    --radius-block: 15px;
+
+
+}
+.text--color{
+    color: var(--text-color);
+}
+
+.aside{
+    background-color: var(--aside-color);
+    width: 20.5em;
+    height: 35em;
+    position:fixed;
+    left: 20em;
+    border-radius: var(--radius-block);
+}
+.aside_img{
+    width: var(--weight-img);
+    height: var(--height-img);
+    padding-left: 1.4em;
+    padding-top: 1em;
+}
+.aside_caption{
+    font-weight: 900;
+    font-size: 1.5rem ;
+}
+.aside_list{
+    padding-left: 4em;
+}
+.aside_list--item{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.aside_button--area{
+    background-color: var(--aside_button-color);
+    width: 20.5em;
+    height: 3em;
+    margin-top:-0.4em;
+    border-radius: 15px;
+}
+.aside_button{
+    position: absolute;
+    left: 7.5em;
+    margin-top: 1em;
+    border-radius: 20px;
+}
+.body--color{
+    background-color: var(--body-color);
+}
+
+.main_data{
+    position: absolute;
+    left: 42em;
+
+}
+.list_h2{
+    padding-left: 1em;
+    padding-top: 0.6em;
+
+}
+.list_h2_connection{
+    padding-left: 7em;
+    padding-top: 1em;
+
+}
+
+
+.main_list_small{
+    background-color: var(--main_list-color);
+    width: 44em;
+    height: 8em;
+    border-radius: var(--radius-block);
+}
+
+.main_list_big{
+    background-color: var(--main_list-color);
+    width: 44em;
+    height: 13em;
+    border-radius: var(--radius-block);
+}
+.main_list_footer{
+    background-color: var(--main_list-color);
+    width: 44em;
+    height: 2em;
+    border-radius: var(--radius-block);
+}
+.footer_h2{
+    padding-left: 12em;
+}
+
+.list_input{
+    padding-left: 13em;
+
+}
+.input_name_connection{
+    width: 23em;
+    height: 2em;
+}
+
+.input_email_connection{
+    width: 23em;
+    height: 2em;
+}
+.input_message{
+    width: 23em;
+    height: 10em;
+
+}
+.button_connection{
+    padding-left: 8em;
+    padding-top: 1em;
+}
+
+.input_name--position{
+    padding-top: 0.1em;
+
+}
+.input_email--position{
+    padding-top: 1em;
+
+}
+.input_message--position{
+    padding-top: 1em;
+}
+.message{
+    padding-left:7em;
+    padding-top: 1em;
+}
+
+.main_list_connection{
+    background-color: var(--main_list-color);
+    width: 44em;
+    height: 30em;
+    border-radius: var(--radius-block);
+}
+
+

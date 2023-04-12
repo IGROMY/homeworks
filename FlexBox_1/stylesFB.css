@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+.item{
+    border: 3px solid red;
+    padding: 2em;
+    flex: 1;
+    /*width: 4em;*/
+    /*height: 4em;*/
+   /*flex-grow: 0;*/
+
+}
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: row;
+
+    }
+
+
+}
