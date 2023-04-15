@@ -1,34 +1,17 @@
 {
-  "name": "homeworks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "cv",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "test": "gulp"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IGROMY/homeworks.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/IGROMY/homeworks/issues"
-  },
-  "homepage": "https://github.com/IGROMY/homeworks#readme",
-  "keywords": [],
   "devDependencies": {
-    "browser-sync": "^2.29.1",
-    "del": "^7.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.62.0"
+    "vite": "^4.2.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^8.0.0"
+    "sass": "^1.62.0"
   }
 }
