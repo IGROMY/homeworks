@@ -1,4 +1,5 @@
-import './styles/style.scss'
+// import './styles/style.scss'
+import './src/styles.scss'
 // import { setupCounter } from './counter.js'
 
 // document.querySelector('#testContainer').innerHTML = `
