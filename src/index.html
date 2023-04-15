@@ -1,113 +1,96 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title> My first resume </title>
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title> GRID </title>
+          <link href="assets/css/styles.css" rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=0">
+      </head>
+    <body>
+      <article class="container">
 
-</head>
-<body class="body--color">
-<article>
-    <aside class= "aside">
-        <figure>
-            <img class="aside_img" src="./assets/MY.jpg" alt="фото не прогрузилось">
-            <figcaption class="aside_caption" >Михайловский Игорь Алексеевич</figcaption>
-        </figure>
-        <h2 class="aside_list">Контакты</h2>
-        <ul>
-            <li class="aside_list--item">+375-33-664-16-10</li>
-            <li class="aside_list--item">igromy99@gmail.com</li>
-            <li class="aside_list--item"><a href="https://vk.com/id172971908">VK</a></li>
-            <li class="aside_list--item"><a href="https://github.com/IGROMY">GitHub</a></li>
-        </ul>
-        <article class="aside_button--area">
-            <button class="aside_button"> DOWNLOAD CV </button>
+          <header class="header">
+
+            <h1 class="logo"> ONLINER </h1>
+
+
+                <label class="search">
+
+                  <input class="input" type="text" placeholder="site search">
+
+                </label>
+
+
+              <div class="button">
+                <button type="button" class="header-button">  войти в аккаунт </button>
+              </div>
+
+          </header>
+
+          <aside class="aside">
+
+                <h1 class="aside-list"> Цены в магазинах </h1>
+
+                <div class="aside-store">
+                    <h4 class="store1"> техно мир </h4>
+                    <button class="aside-button"> купить сейчас </button>
+                </div>
+
+                <div class="aside-store">
+                    <h4 class="store2"> 5 элемент  </h4>
+                    <button class="aside-button"> купить сейчас </button>
+                </div>
+
+                <div class="aside-store">
+                    <h4 class="store3"> МТС </h4>
+                    <button class="aside-button"> купить сейчас </button>
+                </div>
+          </aside>
+
+          <main class="main">
+              <div>
+                <img class="main-img" src="./assets/iphone.jpg" >
+              </div>
+
+
+              <ul class="main-list">
+                <h3> Технические характеристики iPhone 14: </h3>
+                <li>Габариты: 146,7×71,5×7,80 мм, 172 г  </li>
+                <li> Дисплей: 6,1", Super Retina XDR, 2532×1170, 460 ppi, 60 Гц  </li>
+                <li> Процессор: 6-ядерный Apple A15 Bionic  </li>
+                <li> Камера: 12 Мп, f/1,5 (основная) + 12 Мп, f/2,4 (ултраширокоугольная); 12 Мп, f/1,9 (фронтальная)  </li>
+                <li> Память: 6 ГБ оперативной, 128/256/512 ГБ постоянной  </li>
+                <li> Батарея: до 20 часов воспроизведения видео   </li>
+                <li> Связь: Lightning (USB 2.0), Gigabit LTE, 5G, Wi Fi 6 (802.11ax) с технологией MIMO, Bluetooth 5.3, UWB, GPS, ГЛОНАСС, Galileo, NFC, eSIM </li>
+                <li>  Цвет корпуса: Midnight, Purple, Starlight, (PRODUCT)RED, Blue </li>
+              </ul>
+
+              <section class="main-description">
+                  <p>
+                    Традиционно для Apple аппарат iPhone получился ровным по всем параметрам. Тут нет явных косяков или крутейших фишек. Может быть, они есть в Pro-версии, но сомневаюсь.
+                  </p>
+
+                  <p>
+                    В очередной раз убедился, что iPhone создан для того, чтобы забыть про технические параметры.
+                    Собственно, Apple так и рассказывает о смартфоне – понятным для всех языком: у нас стоит самый быстрый процессор, у нас отличные камеры, классный экран, приличное время работы.
+                    Мол, а больше вам ничего не надо: вот доступный компактный iPhone 14, есть чуть больший 14 Plus, продвинутый компактный 14 Pro и самый большой — 14 Pro Max.
+                  </p>
+              </section>
+          </main>
+
+          <footer class="footer">
+              <img class="footer-img" src="./assets/onliner.jpg" width="100" height="40">
+
+              <h3 class="footer-h3"> Свяжитесь с нами </h3>
+              <div class="footer-connection" >
+                <a class="vk" href="https://vk.com/onliner"><img  src="./assets/vk.svg" width="40" height="40">  </a>
+                <a class="inst" href="https://www.youtube.com/onlinerby"><img  src="./assets/instagC.svg" width="50" height="50">  </a>
+              </div>
+          </footer>
+
         </article>
-    </aside>
 
-    <main class="main_data">
-        <section class="main_list_small">
-            <h2 class="list_h2"> Личные данные </h2>
-            <ul>
-                <li>Возраст: 23 года </li>
-                <li> <address> Адрес проживания: г. Витебск ул. Фрунзе 22/2 кв. 42 </address> </li>
-            </ul>
-        </section>
 
-        <section class="main_list_small">
-            <h2 class="list_h2">Цель</h2>
-            <p class="item"> Получение должности Front-End разработчика </p>
-        </section>
+      </body>
 
-        <section class="main_list_big">
-            <h2 class="list_h2">Образование</h2>
-            <p class="item"> 2017 – 2021 гг. - Международный государственный экологический университет им. А.Д.Сахарова</p>
-            <p class="item">Специальность:Информационные системы и технологии</p>
-            <p class="item">Квалификация: Инженер-программист. Эколог</p>
-        </section>
-
-        <section class="main_list_small">
-            <h2 class="list_h2">Профессиональные навыки и знания</h2>
-            <ul>
-                <li>Знание HTML5, CSS/SASS/LESS, опыт адаптивной и кроссбраузерной верстки;</li>
-                <li>Знание JS, PHP.</li>
-            </ul>
-        </section>
-
-        <section class="main_list_small">
-            <h2 class="list_h2">Языки</h2>
-            <ul>
-                <li>Русский;</li>
-                <li>Английский – В1;</li>
-                <li>Испанский – В1.</li>
-            </ul>
-        </section>
-
-        <section   class="main_list_big">
-            <h2 class="list_h2">Опыт работы </h2>
-            <p class="item">"Главный расчетный информационный центр" Белорусской железной дороги. С 2021 до 2023 гг.</p>
-            <p class="item"> Должность: инженер-программист.</p>
-            <p class="item">Должностные обязанности:Сопровождение программы SAP  Enhancement Package 7 for ERP 6.0.Единая корпоративная интегрированная система управления финансами и ресурсами. </p>
-        </section>
-        <section class="main_list_connection">
-            <h2 class="list_h2_connection"> Обращайтесь по любым вопросам </h2>
-            <ul class="list_input">
-                <li>
-                    <form class="input_name--position">
-
-                        <input class="input_name_connection" type="text" placeholder="Full Name (required)">
-
-                    </form>
-                </li>
-                <li>
-
-                    <form class="input_email--position">
-                        <input class="input_email_connection" type="text" placeholder="Your Email (required)">
-                    </form>
-
-                </li>
-
-                <p class="message">Your Message</p>
-
-                <form class="input_message--position">
-                    <textarea class="input_message"> </textarea>
-                </form>
-
-                <p class="button_connection"> <button > Send </button> </p>
-
-            </ul>
-
-        </section>
-        <section class="main_list_footer">
-
-            <h2 class="footer_h2"> <time datetime="2023-04-05"> 5 April 2023 </time> </h2>
-            <p>ff</p>
-        </section>
-
-    </main>
-
-</article>
-
-</body>
 </html>
