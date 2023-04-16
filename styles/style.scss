@@ -1,29 +1,20 @@
-:root{
-  --aside-color: #7AA899;
-  --aside_button-color: #6e6c78;
-  --body-color: #3b3a3d;
-  --main_list-color: #6e6c78;
-  --text-color: #ffffff;
-  --weight-img: 12em;
-  --height-img: 19em;
-  --default-padding: 1em;
-  --radius-block: 15px;
-}
+@import "--variables";
+@import "--mixins";
 .text--color{
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .aside{
-  background-color: var(--aside-color);
+  background-color: $aside-color;
   width: 20.5em;
   height: 35em;
   position:fixed;
   left: 20em;
-  border-radius: var(--radius-block);
+  border-radius: $radius-block;
 }
 .aside_img{
-  width: var(--weight-img);
-  height: var(--height-img);
+  width: $weight-img;
+  height: $height-img;
   padding-left: 1.4em;
   padding-top: 1em;
 }
@@ -39,9 +30,10 @@
   font-weight: 400;
 }
 .aside_button--area{
-  background-color: var(--aside_button-color);
-  width: 20.5em;
-  height: 3em;
+  background-color: $aside_button-color;
+  @include size(20.5em, 3em);
+ // width: 20.5em; height: 3em;
+
   margin-top:-0.4em;
   border-radius: 15px;
 }
@@ -52,7 +44,7 @@
   border-radius: 20px;
 }
 .body--color{
-  background-color: var(--body-color);
+  background-color: $body-color;
 }
 
 .main_data{
@@ -73,23 +65,27 @@
 
 
 .main_list_small{
-  background-color: var(--main_list-color);
-  width: 44em;
-  height: 8em;
-  border-radius: var(--radius-block);
+  background-color: $main_list-color;
+  @include size(44em, 8em);
+  @include fade-in(2s);
+ // width: 44em; height: 8em;
+
+  border-radius: $radius-block;
 }
 
 .main_list_big{
-  background-color: var(--main_list-color);
-  width: 44em;
-  height: 13em;
-  border-radius: var(--radius-block);
+  background-color: $main_list-color;
+  @include size(44em, 13em);
+  //width: 44em;  height: 13em;
+
+  border-radius: $radius-block;
 }
 .main_list_footer{
-  background-color: var(--main_list-color);
+  @include pulse-animation(1s, 1, 0.9);//пульсация
+  background-color: $main_list-color;
   width: 44em;
   height: 2em;
-  border-radius: var(--radius-block);
+  border-radius: $radius-block;
 }
 .footer_h2{
   padding-left: 12em;
@@ -135,10 +131,10 @@
 }
 
 .main_list_connection{
-  background-color: var(--main_list-color);
+  background-color: $main_list-color;
   width: 44em;
   height: 30em;
-  border-radius: var(--radius-block);
+  border-radius: $radius-block;
 }
 
 
