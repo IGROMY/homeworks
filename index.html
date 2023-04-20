@@ -1,112 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title> My first resume </title>
-  </head>
-  <body class="body--color">
-  <article>
-    <aside class= "aside">
-      <figure>
-        <img class="aside_img" src="./assets/MY.jpg" alt="фото не прогрузилось">
-        <figcaption class="aside_caption" >Михайловский Игорь Алексеевич</figcaption>
-      </figure>
-      <h2 class="aside_list">Контакты</h2>
-      <ul>
-        <li class="aside_list--item">+375-33-664-16-10</li>
-        <li class="aside_list--item">igromy99@gmail.com</li>
-        <li class="aside_list--item"><a href="https://vk.com/id172971908">VK</a></li>
-        <li class="aside_list--item"><a href="https://github.com/IGROMY">GitHub</a></li>
-      </ul>
-      <article class="aside_button--area">
-        <button class="aside_button"> <a href="./src/index.html">DOWNLOAD CV </a> </button>
-      </article>
-    </aside>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <title> My first resume </title>
 
-    <main class="main_data">
-      <section class="main_list_small">
-        <h2 class="list_h2"> Личные данные </h2>
-        <ul>
-          <li>Возраст: 23 года </li>
-          <li> <address> Адрес проживания: г. Витебск ул. Фрунзе 22/2 кв. 42 </address> </li>
-        </ul>
-      </section>
 
-      <section class="main_list_small">
-        <h2 class="list_h2">Цель</h2>
-        <p class="item"> Получение должности Front-End разработчика </p>
-      </section>
+</head>
+<body class="body--color">
 
-      <section class="main_list_big">
-        <h2 class="list_h2">Образование</h2>
-        <p class="item"> 2017 – 2021 гг. - Международный государственный экологический университет им. А.Д.Сахарова</p>
-        <p class="item">Специальность:Информационные системы и технологии</p>
-        <p class="item">Квалификация: Инженер-программист. Эколог</p>
-      </section>
+<article class="container">
 
-      <section class="main_list_small">
-        <h2 class="list_h2">Профессиональные навыки и знания</h2>
-        <ul>
-          <li>Знание HTML5, CSS/SASS/LESS, опыт адаптивной и кроссбраузерной верстки;</li>
-          <li>Знание JS, PHP.</li>
-        </ul>
-      </section>
+  <aside class= "aside">
 
-      <section class="main_list_small">
-        <h2 class="list_h2">Языки</h2>
-        <ul>
-          <li>Русский;</li>
-          <li>Английский – В1;</li>
-          <li>Испанский – В1.</li>
-        </ul>
-      </section>
+    <div class="aside-img">
+      <img class="img" src="./assets/IMG.jpg" alt="мое ебало">
+    </div>
 
-      <section   class="main_list_big">
-        <h2 class="list_h2">Опыт работы </h2>
-        <p class="item">"Главный расчетный информационный центр" Белорусской железной дороги. С 2021 до 2023 гг.</p>
-        <p class="item"> Должность: инженер-программист.</p>
-        <p class="item">Должностные обязанности:Сопровождение программы SAP  Enhancement Package 7 for ERP 6.0.Единая корпоративная интегрированная система управления финансами и ресурсами. </p>
-      </section>
-      <section class="main_list_connection">
-        <h2 class="list_h2_connection"> Обращайтесь по любым вопросам </h2>
-        <ul class="list_input">
-          <li>
-            <form class="input_name--position">
+    <p class="aside-text"> MIHAILOUSKI IHAR </p>
 
-              <input class="input_name_connection" type="text" placeholder="Full Name (required)">
+    <p class="aside-text"> FrontEnd DEVELOPER </p>
 
-            </form>
-          </li>
-          <li>
+    <div class="aside-connect">
 
-            <form class="input_email--position">
-              <input class="input_email_connection" type="text" placeholder="Your Email (required)">
-            </form>
+      <div class="svg"> <img class="social" src="./assets/instagram 3.svg">  </div>
 
-          </li>
+      <div class="svg"> <img class="social" src="./assets/vk.svg"> </div>
 
-          <p class="message">Your Message</p>
+      <div class="svg"> <img class="social" src="./assets/github 2.svg"> </div>
 
-          <form class="input_message--position">
-            <textarea class="input_message"> </textarea>
-          </form>
+    </div>
+    <div class="button">
+      <button type="button" class="download-button" onclick="location.href"> DOWNLOAD CV </button>
+    </div>
 
-          <p class="button_connection"> <button > Send </button> </p>
+  </aside>
 
-        </ul>
+  <section class="main1">
+    <h2 class="list_h2 text"> Личные данные </h2>
+    <ul>
+      <li class="text">Возраст: 23 года </li>
+      <li class="text"> <address> Адрес проживания: г. Витебск ул. Фрунзе 22/2 кв. 42 </address> </li>
+    </ul>
+  </section>
 
-      </section>
-      <section class="main_list_footer">
+  <section class="main2">
+    <h2 class="list_h2 text">Цель</h2>
+    <p class="item text"> Получение должности Front-End разработчика </p>
+  </section>
 
-        <h2 class="footer_h2"> <time datetime="2023-04-05"> 5 April 2023 </time> </h2>
-        <p>ff</p>
-      </section>
+  <section class="main3">
+    <h2 class="list_h2 text">Образование</h2>
+    <p class="item text"> 2017 – 2021 гг. - Международный государственный экологический университет им. А.Д.Сахарова</p>
+    <p class="item text">Специальность:Информационные системы и технологии</p>
+    <p class="item text">Квалификация: Инженер-программист. Эколог</p>
+  </section>
 
-    </main>
+  <section class="main4">
+    <h2 class="list_h2 text">Профессиональные навыки и знания</h2>
+    <ul>
+      <li class="text">Знание HTML5, CSS/SASS/LESS, опыт адаптивной и кроссбраузерной верстки;</li>
+      <li class="text">Знание JS, PHP.</li>
+    </ul>
+  </section>
 
-  </article>
-    <div id="testContainer"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  <section class="main5">
+    <h2 class="list_h2 text">Языки</h2>
+    <ul>
+      <li class="text">Русский;</li>
+      <li class="text">Английский – В1;</li>
+      <li class="text">Испанский – В1.</li>
+    </ul>
+  </section>
+
+  <section class="main6">
+    <h2 class="list_h2 text">Опыт работы </h2>
+    <p class="item text">"Главный расчетный информационный центр" Белорусской железной дороги. С 2021 до 2023 гг.</p>
+    <p class="item text"> Должность: инженер-программист.</p>
+    <p class="item text">Должностные обязанности:Сопровождение программы SAP  Enhancement Package 7 for ERP 6.0.Единая корпоративная интегрированная система управления финансами и ресурсами. </p>
+  </section>
+
+  <section class="main7">
+
+    <h2 class="list_h2_connection text"> Обращайтесь по любым вопросам </h2>
+
+
+    <form class="input_name--position">
+
+      <input class="input_name_connection" type="text" placeholder="Full Name (required)">
+
+    </form>
+
+    <form class="input_email--position">
+
+      <input class="input_email_connection" type="text" placeholder="Your Email (required)">
+
+    </form>
+
+    <p class="message text">Your Message</p>
+
+    <form class="input_message--position">
+      <textarea class="input_message"> </textarea>
+    </form>
+
+    <div class="button_connection">
+
+      <button class="button_size animation" onclick="location.href" > Send </button>
+
+    </div>
+
+
+
+  </section>
+</article>
+<div id="testContainer"></div>
+<script type="module" src="/main.js"></script>
+</body>
 </html>

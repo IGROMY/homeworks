@@ -1,140 +1,161 @@
 @import "--variables";
 @import "--mixins";
-.text--color{
-  color: $text-color;
-}
+@import "--aside";
 
-.aside{
-  background-color: $aside-color;
-  width: 20.5em;
-  height: 35em;
-  position:fixed;
-  left: 20em;
-  border-radius: $radius-block;
-}
-.aside_img{
-  width: $weight-img;
-  height: $height-img;
-  padding-left: 1.4em;
-  padding-top: 1em;
-}
-.aside_caption{
-  font-weight: 900;
-  font-size: 1.5rem ;
-}
-.aside_list{
-  padding-left: 4em;
-}
-.aside_list--item{
-  font-size: 1.2em;
-  font-weight: 400;
-}
-.aside_button--area{
-  background-color: $aside_button-color;
-  @include size(20.5em, 3em);
- // width: 20.5em; height: 3em;
-
-  margin-top:-0.4em;
-  border-radius: 15px;
-}
-.aside_button{
-  position: absolute;
-  left: 7.5em;
-  margin-top: 1em;
-  border-radius: 20px;
-}
 .body--color{
   background-color: $body-color;
 }
 
-.main_data{
-  position: absolute;
-  left: 42em;
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:  repeat(55, 2em);
+  gap: 0.5em;
+}
+.text{
+  color:ghostwhite;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
 
 }
-.list_h2{
-  padding-left: 1em;
-  padding-top: 0.6em;
+
+.main1{
+  @include main-position(1em, 1, 5, 3, 6,$main_list-color );
+  //padding-left: 1em;  grid-row: 1/5;  grid-column:3/6;  background-color: $main_list-color;
 
 }
+
+.main2{
+  @include main-position(1em, 5, 9, 3, 6, $main_list-color );
+  // padding-left: 1em;  grid-row: 5/9;  grid-column:3/6;  background-color: $main_list-color;
+
+}
+.main3{
+  @include main-position(1em, 9, 17,3 ,6, $main_list-color);
+  // padding-left: 1em;  grid-row: 9/17;  grid-column:3/6;  background-color: $main_list-color;
+
+}
+.main4{
+  @include main-position(1em, 17, 22, 3, 6, $main_list-color);
+  //padding-left: 1em;  grid-row: 17/22;  grid-column:3/6;  background-color: $main_list-color;
+
+}
+.main5{
+  @include main-position(1em, 22, 27, 3, 6, $main_list-color );
+  //padding-left: 1em; grid-row: 22/27;  grid-column:3/6;  background-color: $main_list-color;
+
+}
+.main6{
+  @include main-position(1em, 27, 36, 3, 6, $main_list-color);
+  //padding-left: 1em;  grid-row: 27/36;  grid-column:3/6;  background-color: $main_list-color;
+
+}.main7{
+   @include main-position(1em, 36, 50, 3, 6, $main_list-color);
+   //padding-left: 1em;  grid-row: 36/50;  grid-column:3/6;  background-color: $main_list-color;
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(8, 1fr);
+
+ }
 .list_h2_connection{
-  padding-left: 7em;
-  padding-top: 1em;
-
+  grid-column:1/5;
+  text-align:center;
 }
-
-
-.main_list_small{
-  background-color: $main_list-color;
-  @include size(44em, 8em);
-  @include fade-in(2s);
- // width: 44em; height: 8em;
-
-  border-radius: $radius-block;
-}
-
-.main_list_big{
-  background-color: $main_list-color;
-  @include size(44em, 13em);
-  //width: 44em;  height: 13em;
-
-  border-radius: $radius-block;
-}
-.main_list_footer{
-  @include pulse-animation(1s, 1, 0.9);//пульсация
-  background-color: $main_list-color;
-  width: 44em;
-  height: 2em;
-  border-radius: $radius-block;
-}
-.footer_h2{
-  padding-left: 12em;
-}
-
-.list_input{
-  padding-left: 13em;
-
-}
-.input_name_connection{
-  width: 23em;
-  height: 2em;
-}
-
-.input_email_connection{
-  width: 23em;
-  height: 2em;
-}
-.input_message{
-  width: 23em;
-  height: 10em;
-
-}
-.button_connection{
-  padding-left: 8em;
-  padding-top: 1em;
-}
-
 .input_name--position{
-  padding-top: 0.1em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  @include size(2, 2, 4);
+  // grid-row:2;  grid-column: 2/4;
 
 }
-.input_email--position{
-  padding-top: 1em;
 
+.input_name_connection{
+  background-color: $body-color;
+  width: 90%;
+  height: 50%;
+  color:$color-input;
+}
+.input_name_connection:hover{
+  background-color:rgb(107, 103, 110) ;
+}
+
+
+.input_email--position{
+  @include position(flex, center, center);
+  // display:flex;  justify-content: center;  align-items: center;
+
+  @include size(3, 2, 4);
+  //grid-row:3; grid-column: 2/4;
+
+}
+.input_email_connection{
+  background-color: $body-color;
+  width: 90%;
+  height: 50%;
+  color:$color-input;
+}
+.input_email_connection:hover{
+  background-color:rgb(107, 103, 110) ;
+}
+
+.message{
+  @include size(4, 2, 4);
+  //grid-row:4; grid-column: 2/4;
+
+  text-align:center;
 }
 .input_message--position{
-  padding-top: 1em;
+  @include position(flex, center, center);
+  //display: flex;  justify-content: center;  align-items: center;
+
+  grid-row:5/7;
+  grid-column: 2/4;
 }
-.message{
-  padding-left:7em;
-  padding-top: 1em;
+.input_message{
+  background-color: $body-color;
+  width: 90%;
+  height: 90%;
+  color:$color-input;
+}
+.input_message:hover{
+  background-color:rgb(107, 103, 110) ;
 }
 
-.main_list_connection{
-  background-color: $main_list-color;
-  width: 44em;
-  height: 30em;
-  border-radius: $radius-block;
+.button_connection{
+  @include position(flex, center, center);
+  //display: flex;  justify-content: center;  align-items: center;
+  grid-row:7/9;
+  grid-column: 2/4;
+}
+.button_size{
+  width: 50%;
+  height: 30%;
+  cursor:pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  //background-color:black;
+
+}
+.animation{
+  color:#524E49;
+  background: #f5ebc6;
+  //padding: 10px;
+  font-size: 20px;
+  box-shadow: 0px 1px 3px;
+  transition: all 500ms ease-out;
+}
+.animation:hover{
+  box-shadow: 0px 0px 0px 2px #f90914,
+              0px 0px 0px 7px #a7f9c9,
+              0px 0px 0px 9px #f90914,
+              0px 0px 5px 10px #ff4d00 ;
 }
 
+/*.button_size:hover{
+   background-color:rgb(223, 253, 228);
+ }*/
+.button_size:active{
+  background-color:rgb(151, 236, 143);
+}
 
