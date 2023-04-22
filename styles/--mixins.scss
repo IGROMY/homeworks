@@ -1,3 +1,4 @@
+@import "--variables";
 @mixin size($rowS, $columnS, $columnE ){
   grid-row-start: $rowS;
   grid-column-start: $columnS;
@@ -15,6 +16,17 @@
   display:$display;
   justify-content:$content;
   align-items:$items;
+}
+@mixin input {
+  background-color: $body-color;
+  width: 90%;
+  height: 50%;
+  color:$color-input;
+}
+@mixin hover-effect {
+  &:hover {
+    background-color:$hover-color;
+  }
 }
 //анимация появлкния
 /*@mixin fade-in($duration:1s){
