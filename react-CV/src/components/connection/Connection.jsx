@@ -6,7 +6,7 @@ const Connection = () => {
     <section className={styles.connection}>
 
         <form>
-            <h2 className={styles.list_h2_connection}{ styles.text}> Обращайтесь по любым вопросам </h2>
+            <h2 className={styles.list_h2_connection}{styles.text}> Обращайтесь по любым вопросам </h2>
             <label className={styles.input_namePosition}>
                  <input className={styles.input_name_connection} type="text" placeholder="Full Name (required)"/>
             </label>
