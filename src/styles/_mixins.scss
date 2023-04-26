@@ -1,0 +1,64 @@
+@import "variables";
+@mixin size($rowS, $columnS, $columnE ){
+  grid-row-start: $rowS;
+  grid-column-start: $columnS;
+  grid-column-end: $columnE ;
+}
+@mixin main-position($padding, $rowS , $rowE, $columnS,$columnE, $color){
+  padding-left: $padding;
+  grid-row-start: $rowS;
+  grid-row-end: $rowE;
+  grid-column-start:$columnS;
+  grid-column-end:$columnE ;
+  background-color:$color;
+}
+@mixin position($display, $content, $items){
+  display:$display;
+  justify-content:$content;
+  align-items:$items;
+}
+@mixin input {
+  background-color: $body-color;
+  width: 90%;
+  height: 50%;
+  color:$color-input;
+}
+@mixin hover-effect {
+  &:hover {
+    background-color:$hover-color;
+  }
+}
+//анимация появлкния
+/*@mixin fade-in($duration:1s){
+  animation: fade-in $duration ease;
+  @keyframes fade-in {
+    from {
+      opacity: 0 ;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}*/
+//анимация пульсации
+//@mixin pulse-animation($duration, $size-from, $size-to) {
+//  $frames: (
+//   from: (
+//     transform: scale($size-from)
+//   ),
+//   to: (
+//     transform: scale($size-to)
+//   )
+// );
+// animation: pulse $duration infinite;
+// @keyframes pulse {
+//   @each $key, $value in $frames {
+//     #{$key} {
+///       @each $property, $property-value in $value {
+//         #{$property}: $property-value;
+//       }
+//     }
+//   }
+// }
+//}
+

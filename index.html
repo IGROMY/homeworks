@@ -1,103 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0">
-  <title> My first resume </title>
-
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
 </head>
-  <body class="body--color">
-  <article class="container">
-  <aside class= "aside">
-    <div class="aside-img">
-      <img class="img" src="./assets/IMG.jpg" alt="мое ебало">
-    </div>
-
-    <p class="aside-text"> MIHAILOUSKI IHAR </p>
-
-    <p class="aside-text"> FrontEnd DEVELOPER </p>
-
-    <div class="aside-connect">
-      <div class="svg">
-        <img class="social" src="./assets/instagram 3.svg" alt="">
-      </div>
-      <div class="svg">
-        <img class="social" src="./assets/vk.svg" alt="">
-      </div>
-      <div class="svg">
-        <img class="social" src="./assets/github 2.svg" alt="">
-      </div>
-    </div>
-    <div class="button">
-      <button type="button" class="download-button" onclick="location.href"> DOWNLOAD CV </button>
-    </div>
-  </aside>
-  <section class="main1">
-    <h2 class="list_h2 text"> Личные данные </h2>
-    <ul>
-      <li class="text">Возраст: 23 года </li>
-      <li class="text"> <address> Адрес проживания: г. Витебск ул. Фрунзе 22/2 кв. 42 </address> </li>
-    </ul>
-  </section>
-  <section class="main2">
-    <h2 class="list_h2 text">Цель</h2>
-    <p class="item text"> Получение должности Front-End разработчика </p>
-  </section>
-  <section class="main3">
-    <h2 class="list_h2 text">Образование</h2>
-    <p class="item text"> 2017 – 2021 гг. - Международный государственный экологический университет им. А.Д.Сахарова</p>
-    <p class="item text">Специальность:Информационные системы и технологии</p>
-    <p class="item text">Квалификация: Инженер-программист. Эколог</p>
-  </section>
-  <section class="main4">
-    <h2 class="list_h2 text">Профессиональные навыки и знания</h2>
-    <ul>
-      <li class="text">Знание HTML5, CSS/SASS/LESS, опыт адаптивной и кроссбраузерной верстки;</li>
-      <li class="text">Знание JS, PHP.</li>
-    </ul>
-  </section>
-  <section class="main5">
-    <h2 class="list_h2 text">Языки</h2>
-    <ul>
-      <li class="text">Русский;</li>
-      <li class="text">Английский – В1;</li>
-      <li class="text">Испанский – В1.</li>
-    </ul>
-  </section>
-  <section class="main6">
-    <h2 class="list_h2 text">Опыт работы </h2>
-    <p class="item text">"Главный расчетный информационный центр" Белорусской железной дороги. С 2021 до 2023 гг.</p>
-    <p class="item text"> Должность: инженер-программист.</p>
-    <p class="item text">Должностные обязанности:Сопровождение программы SAP  Enhancement Package 7 for ERP 6.0.Единая корпоративная интегрированная система управления финансами и ресурсами. </p>
-  </section>
-  <section class="main7">
-<!--    Должна быть один Form, внутри input обернутые в label + h2 + button-->
-    <h2 class="list_h2_connection text"> Обращайтесь по любым вопросам </h2>
-    <form class="input_name--position">
-      <input class="input_name_connection" type="text" placeholder="Full Name (required)">
-    </form>
-    <form class="input_email--position">
-      <input class="input_email_connection" type="text" placeholder="Your Email (required)">
-    </form>
-
-    <p class="message text">Your Message</p>
-
-    <form class="input_message--position">
-      <textarea class="input_message"> </textarea>
-    </form>
-
-    <div class="button_connection">
-
-      <button id="contactButton"   >  </button>
-
-    </div>
-
-
-
-  </section>
-
-  </article>
-<div id="testContainer"></div>
-<script type="module" src="/main.js"></script>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
