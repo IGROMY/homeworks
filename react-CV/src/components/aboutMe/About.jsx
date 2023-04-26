@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <section className={styles.aboutMe}>
-      <h2 className={styles.text}"list_h2"> Личные данные </h2>
+      <h2 className={styles.text}> Личные данные </h2>
       <ul>
         <li className={styles.text}>Возраст: 23 года</li>
         <li className={styles.text}>
