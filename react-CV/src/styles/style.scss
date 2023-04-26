@@ -1,0 +1,128 @@
+@import "--variables";
+@import "--mixins";
+@import "--aside";
+
+.body--color {
+  background-color: $body-color;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:  repeat(55, 2em);
+  gap: 0.5em;
+}
+.text {
+  color:ghostwhite;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: $base-font-size * 1.5;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+}
+
+.aboutMe {
+  @include main-position(1em, 1, 5, 3, 6,$main_list-color );
+}
+
+.target {
+  @include main-position(1em, 5, 9, 3, 6, $main_list-color );
+ }
+.education {
+  @include main-position(1em, 9, 17,3 ,6, $main_list-color);
+}
+.slills {
+  @include main-position(1em, 17, 22, 3, 6, $main_list-color);
+}
+.languages {
+  @include main-position(1em, 22, 27, 3, 6, $main_list-color );
+}
+.experience {
+  @include main-position(1em, 27, 36, 3, 6, $main_list-color);
+}
+.connection {
+   @include main-position(1em, 36, 50, 3, 6, $main_list-color);
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(8, 1fr);
+  .list_h2_connection {
+    grid-column:1/5;
+    text-align:center;
+  }
+  .input_name--position {
+    @include position(flex, center, center);
+    @include size(2, 2, 4);
+    .input_name_connection {
+      @include input;
+      @include hover-effect;
+    }
+  }
+  .input_email--position {
+    @include position(flex, center, center);
+    @include size(3, 2, 4);
+    .input_email_connection {
+      @include input;
+      @include hover-effect;
+    }
+  }
+  .message {
+    @include size(4, 2, 4);
+    text-align:center;
+  }
+  .input_message--position {
+    @include position(flex, center, center);
+    grid-row:5/7;
+    grid-column: 2/4;
+    .input_message {
+      @include input;
+      @include hover-effect;
+    }
+  }
+  .button_connection {
+    @include position(flex, center, center);
+    //display: flex;  justify-content: center;  align-items: center;
+    grid-row:7/9;
+    grid-column: 2/4;
+    // Вложенность!
+    .button_size {
+      width: 50%;
+      height: 30%;
+      cursor:pointer;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+      //background-color:black;
+      &:active {
+        background-color:rgb(151, 236, 143);
+      }
+    }
+    .animation {
+      color:#524E49;
+      background: #f5ebc6;
+      //padding: 10px;
+      font-size: 20px;
+      box-shadow: 0 1px 3px;
+      transition: all 500ms ease-out;
+      &:hover {
+        box-shadow: 0 0 0 2px #f90914,
+        0 0 0 7px #a7f9c9,
+        0 0 0 9px #f90914,
+        0 0 5px 10px #ff4d00 ;
+      }
+    }
+  }
+ }
+
+@media screen and (max-width: $small-screen) {
+  .text {
+    font-size: $base-font-size;
+  }
+}
+@media screen and (min-width: $medium-screen) and (max-width: $large-screen) {
+  .text {
+    font-size: $base-font-size * 1.2;
+  }
+}
+@media screen and (min-width: $large-screen) {
+  .text {
+    font-size: $base-font-size * 1.5;
+  }
+}
