@@ -1,5 +1,5 @@
-@import "src/styles/variables";
-@import "src/styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 .experience {
     @include main-position(1em, 27, 36, 3, 6, $main_list-color);
   }

@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from "./Target.module.scss";
+import Title from "../../ui/title/Title.jsx";
 const Target = () => {
     return (
         <section className={styles.target}>
-            <h2 className={styles.text}>Цель</h2>
+          <Title text="Цель"/>
             <p className={styles.text}> Получение должности Front-End разработчика </p>
       </section>
     );

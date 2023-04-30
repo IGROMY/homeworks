@@ -1,10 +1,12 @@
 import styles from "./Languages.module.scss";
 import React from 'react';
+import Title from "../../ui/title/Title.jsx";
 
 const Languages = () => {
   return (
 <section className={styles.languages}>
-        <h2 className={styles.text}>Языки</h2>
+  <Title text="Языки"/>
+
         <ul>
           <li className={styles.text}>Русский;</li>
           <li className={styles.text}>Английский – В1;</li>

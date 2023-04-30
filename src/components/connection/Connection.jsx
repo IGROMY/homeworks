@@ -1,29 +1,22 @@
 import React from 'react';
 import styles from "./Connection.module.scss";
+import Button from "../../ui/button/Button.jsx";
+import Input from "../../ui/input/Input.jsx";
+import TextArea from "../../ui/textArea/TextArea.jsx";
+import Title from "../../ui/title/Title.jsx";
 const Connection = () => {
     return (
 
     <section className={styles.connection}>
 
         <form>
-            <h2 className={styles.list_h2_connection}> Обращайтесь по любым вопросам </h2>
-            <label className={styles.input_namePosition}>
-                 <input className={styles.input_name_connection} type="text" placeholder="Full Name (required)"/>
-            </label>
-            <label className={styles.input_email_connection}>
-                <input className={styles.input_email_connection} type="text" placeholder="Your Email (required)"/>
-            </label>
+          <Title text="Обращайтесь по любым вопросам"/>
 
-            <p className={styles.message} text>Your Message</p>
-
-            <label className={styles.input_messagePosition}>
-                 <textarea className={styles.input_message}> </textarea>
-            </label>
-
+          <Input label="Full name" type="text" placeholder="Full Name (required)" />
+          <Input label="Email" type="email" placeholder="Your Email (required)" />
+          <TextArea label="Your message" placeholder="Enter your message" />
             <div className={styles.button_connection}>
-
-            <button id="contactButton"></button>
-
+                <Button text="Send"/>
             </div>
         </form>
 

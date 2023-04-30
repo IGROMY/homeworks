@@ -1,0 +1,27 @@
+@import "src/styles/mixins";
+
+.button {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  padding: 1em ;
+  .download-button {
+    font-size: 1.1em;
+    cursor:pointer;
+    border-radius: 5px;
+    //transition: background-color 0.2s;
+    background: #f5ebc6;
+    box-shadow:  0 1px 3px;
+    transition: all 500ms ease-out;
+    &:hover {
+      box-shadow: 0 0 0 2px #f90914,
+      0 0 0 7px #a7f9c9,
+      0 0 0 9px #f90914,
+      0 0 5px 10px #ff4d00 ;
+    }
+    &:active {
+      background-color:rgb(151, 236, 143);
+    }
+  }
+}
+

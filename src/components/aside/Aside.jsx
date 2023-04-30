@@ -4,7 +4,13 @@ import avatar from "../../assets/IMG.jpg";
 import inst from "../../assets/instagram 3.svg";
 import vk from "../../assets/vk.svg";
 import git from "../../assets/github 2.svg";
+import Button from "../../ui/button/Button.jsx";
+import SocialMedia from "../../ui/socialMedia/SocialMedia.jsx";
 const Aside = () => {
+    const handleDownload = () =>{
+      alert("Hello");
+
+    }
   return (
     <aside className={styles.aside}>
       <div className={styles.asideImg}>
@@ -16,18 +22,15 @@ const Aside = () => {
       <p className={styles.asideText}> FrontEnd DEVELOPER </p>
 
       <div className={styles.asideConnect}>
-        <div className={styles.svg}>
-          <img className={styles.svg} src={inst} alt=""/>
-        </div>
-        <div className={styles.svg}>
-          <img className={styles.social} src={vk} alt=""/>
-        </div>
-        <div className={styles.svg}>
-          <img className={styles.social} src={git} alt=""/>
-        </div>
+        <SocialMedia href="https://www.instagram.com/" src="inst" alt="instagram"/>
+        <SocialMedia href="https://vk.com/id172971908" src="vk" alt="VK"/>
+       <SocialMedia href="https://github.com/IGROMY" src="git" alt="GitHub"/>
+
       </div>
       <div className={styles.button}>
-        <button type="button" className={styles.downloadButton} > DOWNLOAD CV</button>
+
+        <Button onClick={handleDownload} text="DOWNLOAD"/>
+        {/*<button type="button" className={styles.downloadButton} > DOWNLOAD CV</button>*/}
       </div>
     </aside>
   );

@@ -1,10 +1,12 @@
 import styles from "./About.module.scss";
 import React from 'react';
+import Title from "../../ui/title/Title.jsx";
 
 const About = () => {
   return (
     <section className={styles.aboutMe}>
-      <h2 className={styles.text}> Личные данные </h2>
+      <Title text="Contact me"/>
+
       <ul>
         <li className={styles.text}>Возраст: 23 года</li>
         <li className={styles.text}>

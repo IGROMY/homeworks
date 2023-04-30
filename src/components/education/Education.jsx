@@ -1,11 +1,13 @@
 import styles from "./Education.module.scss";
 import React from 'react';
+import Title from "../../ui/title/Title.jsx";
 
 
 const Education = () => {
   return (
         <section className={styles.education}>
-            <h2 className={styles.text}>Образование</h2>
+          <Title text="Образование"/>
+
             <p className={styles.text}> 2017 – 2021 гг. - Международный государственный экологический университет им.
               А.Д.Сахарова</p>
             <p className={styles.text}>Специальность:Информационные системы и технологии</p>

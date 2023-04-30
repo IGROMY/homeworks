@@ -9,11 +9,12 @@ import Skills from "./components/skills/Skills.jsx";
 import Languages from "./components/languages/Languages.jsx";
 import Experience from "./components/experience/Experience.jsx";
 import Connection from "./components/connection/Connection.jsx";
+import LayOut from "./ui/lauOut/LayOut.jsx";
 
 function App() {
 
   return (
-    <article className={styles.container}>
+    <LayOut className={styles.container}>
       <Aside/>
       <About/>
       <Target/>
@@ -22,7 +23,7 @@ function App() {
       <Languages/>
       <Experience/>
       <Connection/>
-    </article>
+    </LayOut>
   )
 }
 
